@@ -1,23 +1,19 @@
 pipeline {
 
-	agent any {
+	agent any {	
 
-		tools {
-			maven 'maven3'
-		}
+	stages {
 
-		stages {
-
-			stage('development') {
-				echo 'develpoment staging area'
+		stage('development') {
+			echo 'develpoment staging area'
 			}
 
-			stage('testing area') {
-				echo 'testing area'
+		stage('testing area') {
+			echo 'testing area'
 			}
 
-			stage('building area') {
-				echo 'ibuilding area'
+		stage('building area') {
+			echo 'ibuilding area'
 			}
 		}
 	}
